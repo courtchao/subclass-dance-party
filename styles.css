@@ -26,7 +26,50 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+.lineUp{
+  display: flex;
+  align-content: center;
+}
 .dancer{
-  content: url(http://lishiyo.github.io/amped-corgis/images/corgi.png);
-  position:absolute;
+  content: url(https://media.giphy.com/media/FDIkz9FcbFuN2/giphy.gif);
+  position: absolute;
+}
+.funkyDancer{
+  content: url(https://media.giphy.com/media/xUA7b7iSKUVXNEahig/giphy.gif);
+  animation: circle 2s infinite linear;
+}
+
+.boogieDancer{
+  content: url(https://media.giphy.com/media/3og0IvuEEBVjBoeBQA/giphy.gif);
+  animation: bounce 3s infinite linear;
+}
+
+
+/*.dancer1{
+  content: url(https://media.giphy.com/media/Wl4l7xdtvddO8/giphy.gif);
+  position: absolute;
+}*/
+  
+@keyframes circle {
+  from {
+    transform: rotate(0deg)
+               translate(-150px)
+               rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+               translate(-150px) 
+               rotate(-360deg);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translate(-150px)
+               rotate(0deg);
+  }
+  to {
+    transform: translate(-150px) 
+               rotate(-360deg);
+  }
 }
