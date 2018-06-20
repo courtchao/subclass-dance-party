@@ -3,10 +3,17 @@ $(document).ready(function() {
    
   $('.lineUpButton').on('click', function() {
     // $('.lineUp').toggle();
+    // var isOn = false;
+    
     for (var i = 0; i < window.dancers.length; i++) {
-    // console.log(window.dancers[i])
-      dancers[i].setPosition(250, 200);
-   
+      // if (isOn === false) {
+        dancers[i].setPosition('auto', 'offset');
+        isOn = true;
+    //   }
+    //   if (isOn === true) {
+    //     dancers[i].setPosition('initial', 'initial');
+    //     isOn = false;
+    //   }
     }
   });
 

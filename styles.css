@@ -41,7 +41,9 @@ body, a:link, a:visited, a:active{
 
 .boogieDancer{
   content: url(https://media.giphy.com/media/3og0IvuEEBVjBoeBQA/giphy.gif);
-  animation: bounce 3s infinite linear;
+  animation: rotate 3s infinite linear;
+  display: flex;
+
 }
 
 
@@ -63,7 +65,7 @@ body, a:link, a:visited, a:active{
   }
 }
 
-@keyframes bounce {
+@keyframes rotate {
   from {
     transform: translate(-150px)
                rotate(0deg);

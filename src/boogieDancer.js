@@ -1,6 +1,7 @@
 var makeBoogieDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<span class="dancer boogieDancer"></span>'); 
+  this.setPosition(top, left);
 };
 
 makeBoogieDancer.prototype = Object.create(makeDancer.prototype);
